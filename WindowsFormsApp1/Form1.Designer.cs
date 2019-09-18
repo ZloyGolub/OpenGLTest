@@ -44,6 +44,7 @@
             this.openGLControl1.RenderTrigger = SharpGL.RenderTrigger.TimerBased;
             this.openGLControl1.Size = new System.Drawing.Size(803, 447);
             this.openGLControl1.TabIndex = 0;
+            this.openGLControl1.Load += new System.EventHandler(this.OpenGLControl1_Load);
             // 
             // Form1
             // 
@@ -53,6 +54,7 @@
             this.Controls.Add(this.openGLControl1);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.ResizeEnd += new System.EventHandler(this.Form1_ResizeEnd);
             ((System.ComponentModel.ISupportInitialize)(this.openGLControl1)).EndInit();
             this.ResumeLayout(false);
 
