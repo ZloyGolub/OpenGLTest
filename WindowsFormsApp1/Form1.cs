@@ -89,12 +89,7 @@ namespace WindowsFormsApp1
                 gl.Vertex(Math.Cos(nextA) * ballRadius, Math.Sin(nextA) * (float)ballRadius);
                 gl.Vertex(0.0f, 0.0f);
             }
-
-            //gl.Vertex(-1f, -1f);
-            //gl.Vertex(0f, 1f);
-            //gl.Vertex(1f, -1f);
-
-            // Завершаем работу                                 
+                          
             gl.End();
             gl = this.openGLControl1.OpenGL;
             gl.MatrixMode(OpenGL.GL_MODELVIEW);
